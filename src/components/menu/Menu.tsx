@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
+import cursor from "../../assets/images/cursor.svg"
 
 type MenuPropsType = {
     menuItem: Array<string>
@@ -27,13 +29,19 @@ const StyledMenu = styled.nav`
 `
 
 const MenuList = styled.ul`
-  
+  display: flex;
+  gap: 30px;
 `
 
 const MenuItem = styled.li`
-
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
 `
 
 const Link = styled.a`
-  
+  &:hover {
+    color: ${theme.colors.hover};
+    cursor: url(${cursor}), pointer;
+  }
 `

@@ -1,6 +1,9 @@
 import {createGlobalStyle} from "styled-components";
 import {theme} from "./Theme";
 
+import cursorPointer from '../assets/images/cursor.svg'
+import cursor from '../assets/images/cursor-svgrepo-com.svg'
+
 export const GlobalStyle = createGlobalStyle`
   *,
   *::before,
@@ -8,9 +11,9 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    cursor: url(${cursor}), auto;
   }
-  
-  
+
   body {
     margin: 0;
     font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -33,7 +36,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   button {
-    cursor: pointer;
+    cursor: url(${cursorPointer}), pointer;
     background-color: transparent;
     border: 0;
   }
