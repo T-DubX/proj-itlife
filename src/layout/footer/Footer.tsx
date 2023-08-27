@@ -19,5 +19,11 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
+  padding: 40px 0 40px;
   
+  ${Container} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `

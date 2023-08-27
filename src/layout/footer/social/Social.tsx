@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {Icon} from "../../../components/icon/Icon";
 import {theme} from "../../../styles/Theme";
+import cursorPointer from "../../../assets/images/cursor.svg"
 
 export const Social = () => {
     return (
@@ -27,9 +28,10 @@ export const Social = () => {
 
 const StyledSocial = styled.div`
   display: flex;
+  gap: 10px;
 `
 
-export const WrapperIcon = styled.div`
+const WrapperIcon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,4 +39,22 @@ export const WrapperIcon = styled.div`
   height: 42px;
 
   border: 1px solid ${theme.colors.hover};
+  
+  svg {
+    fill: #18B5DC;
+  }
+  
+  &:hover {
+    cursor: url(${cursorPointer}), pointer;
+    background-color: ${theme.colors.hover};
+    
+    svg {
+      cursor: url(${cursorPointer}), pointer;
+      fill: #FFF;
+    }
+    
+    svg use{
+      cursor: url(${cursorPointer}), pointer;
+    }
+  }
 `

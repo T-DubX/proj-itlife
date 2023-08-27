@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 import {Icon} from "../../../components/icon/Icon";
-import {WrapperIcon} from "../../footer/social/Social";
 import cursorPoiner from '../../../assets/images/cursor.svg'
 
 type MemberTeamPropsType = {
@@ -37,15 +36,21 @@ export const MemberTeam = (props: MemberTeamPropsType) => {
 const StyledMemberTeam = styled.div`
   display: flex;
   flex-direction: column;
+  
+`
 
-  ${WrapperIcon} {
-    background-color: #5DCBE6;
-    border: 0;
+const WrapperIcon = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  
+  background-color: #5DCBE6;
+  border: 0;
 
-
-    svg {
-      fill: #FFF;
-    }
+  svg {
+    fill: #FFF;
   }
 
 `
@@ -108,6 +113,7 @@ const WrapperPhoto = styled.div`
     
     ${WrapperIcons} {
       opacity: 1;
+      z-index: 1;
       cursor: url(${cursorPoiner}), pointer;
     }
 

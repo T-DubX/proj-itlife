@@ -25,7 +25,7 @@ export const Menu = (props: MenuPropsType) => {
 };
 
 const StyledMenu = styled.nav`
-  
+  margin: 28px 0 28px;
 `
 
 const MenuList = styled.ul`
