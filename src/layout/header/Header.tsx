@@ -39,8 +39,10 @@ const Button = styled.button`
   padding: 10px 20px;
   
   &:hover {
-    transform: translateY(2px);
     transition: .2s;
+    border: 1px solid ${theme.colors.hover};
+    background-color: ${theme.colors.hover};
+    color: #FFF;
   }
   
 `
