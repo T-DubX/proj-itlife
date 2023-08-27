@@ -41,7 +41,6 @@ const StyledLogo = styled.a`
   svg {
     transform: rotate(-15deg);
     cursor: url(${cursorPointer}), pointer;
-    
   }
   
   svg use{

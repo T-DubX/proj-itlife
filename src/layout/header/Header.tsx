@@ -20,6 +20,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
+  padding: 3px 0 3px;
   ${Container} {
     display: flex;
     justify-content: space-between;

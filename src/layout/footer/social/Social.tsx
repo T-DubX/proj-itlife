@@ -29,7 +29,7 @@ const StyledSocial = styled.div`
   display: flex;
 `
 
-const WrapperIcon = styled.div`
+export const WrapperIcon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
